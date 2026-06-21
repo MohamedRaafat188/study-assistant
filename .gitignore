@@ -1,0 +1,30 @@
+# Derived image/formula artifacts
+formula_crops/
+image_crops/
+
+# Local vector DB data
+temp_chroma/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/

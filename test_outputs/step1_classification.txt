@@ -1,0 +1,25 @@
+============================================================
+Stage 1: Document Classification
+============================================================
+
+File:        small_data\attention is all you need.pdf
+Total pages: 15
+Needs OCR:   False
+Summary:     15 digital, 0 scanned
+
+Page Classifications:
+  Page   1: digital   chars=  2857  density=0.0059
+  Page   2: digital   chars=  4255  density=0.0088
+  Page   3: digital   chars=  1826  density=0.0038
+  Page   4: digital   chars=  2507  density=0.0052
+  Page   5: digital   chars=  3192  density=0.0066
+  Page   6: digital   chars=  3472  density=0.0072
+  Page   7: digital   chars=  3320  density=0.0068
+  Page   8: digital   chars=  3193  density=0.0066
+  Page   9: digital   chars=  2972  density=0.0061
+  Page  10: digital   chars=  3111  density=0.0064
+  Page  11: digital   chars=  3215  density=0.0066
+  Page  12: digital   chars=  3213  density=0.0066
+  Page  13: digital   chars=   793  density=0.0016
+  Page  14: digital   chars=   777  density=0.0016
+  Page  15: digital   chars=   780  density=0.0016

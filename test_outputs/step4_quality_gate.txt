@@ -1,0 +1,14 @@
+============================================================
+Stage 4: Quality Gate
+============================================================
+
+Outcome: PASS
+Score:   1.0
+Passed:  True
+
+Stats:
+  extraction_ratio: 0.87
+  total_text_chars: 34494
+  total_active_items: 164
+
+No warnings — clean extraction.
