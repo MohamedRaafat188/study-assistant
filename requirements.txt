@@ -1,0 +1,47 @@
+# ── Core pipeline ─────────────────────────────────────────────────────────────
+
+# PDF parsing and layout analysis
+PyMuPDF>=1.27.2          # fitz — page classification, region cropping
+docling>=2.92.0          # Docling — PDF layout analysis and text extraction
+docling-core>=2.74.0     # Docling document types (DoclingDocument, DocItemLabel, etc.)
+
+# Embeddings and reranking
+FlagEmbedding>=1.4.0     # BAAI/bge-m3 (embedder) and BAAI/bge-reranker-v2-m3 (reranker)
+transformers>=4.57.0     # Tokenizers for chunker and embedder
+sentence-transformers>=5.5.0  # Required by FlagEmbedding
+
+# Vector store
+qdrant-client>=1.18.0    # Local Qdrant (no server needed — uses in-memory or file storage)
+
+# UI
+streamlit>=1.58.0
+
+# VLM image descriptions (used in post-processing)
+ollama>=0.6.2            # Ollama Python client — requires Ollama server running locally
+
+# ── PyTorch ───────────────────────────────────────────────────────────────────
+# Install the version that matches your hardware:
+#
+#   CPU only:
+#     pip install torch>=2.5.0
+#
+#   CUDA 12.6 (recommended for GPU):
+#     pip install torch>=2.11.0 --index-url https://download.pytorch.org/whl/cu126
+#
+# The project was developed with torch 2.11.0+cu126.
+# Do NOT install torch via the line below — use one of the commands above.
+# torch>=2.5.0
+
+# ── Notes ─────────────────────────────────────────────────────────────────────
+# 1. Ollama must be installed separately (https://ollama.com) and the desired
+#    VLM model pulled before running (e.g. `ollama pull qwen2.5vl:7b`).
+#    The image description step will fall back to captions if Ollama is offline.
+#
+# 2. Docling downloads model weights on first run (~1-2 GB). Subsequent runs
+#    use the cached weights.
+#
+# 3. FlagEmbedding downloads BAAI/bge-m3 (~2.3 GB) and
+#    BAAI/bge-reranker-v2-m3 (~1.1 GB) from HuggingFace on first use.
+#
+# Install all dependencies (after installing torch separately):
+#   pip install -r requirements.txt
